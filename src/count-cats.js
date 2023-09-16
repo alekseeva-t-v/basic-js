@@ -1,10 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given matrix where you have to find cats by ears "^^"
+ * Находит котов по ушам "^^", возвращает их количество
  *
- * @param {Array<Array>} matrix
- * @return {Number} count of cats found
+ * @param {object} arr исходный массив значений (может включать в себя вложенные массивы)
+ * @return {number} количество найденных котов
  *
  * @example
  * countCats([
