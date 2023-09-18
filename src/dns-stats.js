@@ -1,10 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given an array of domains, return the object with the appearances of the DNS.
+ * Учитывая массив доменов, возвращает объект с имеющимися в нем DNS.
  *
- * @param {Array} domains
- * @return {Object}
+ * @param {array} domains массив доменов
+ * @return {object} объект с имеющимися в нем DNS
  *
  * @example
  * domains = [
@@ -29,16 +29,13 @@ function getDNSStats(domains) {
     let strDomain = '';
     for (let i = arrDomain.length; i > 0; i--) {
       strDomain += `.${arrDomain.slice(i - 1, i)}`;
-      if (DNSStats[strDomain]) {
-        DNSStats[strDomain] += 1;
-      } else {
-        DNSStats[strDomain] = 1;
-      }
+
+      DNSStats[strDomain] = DNSStats[strDomain] ? DNSStats[strDomain] + 1 : 1;
     }
   });
   return DNSStats;
 }
 
 module.exports = {
-  getDNSStats
+  getDNSStats,
 };

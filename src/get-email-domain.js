@@ -1,10 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given an email address, return it's domain.
+ * Учитывая адрес электронной почты, возврашает его домен.
  *
- * @param {String} email
- * @return {String}
+ * @param {string} email Исходный электронный адрес
+ * @return {string} домен
  *
  * @example
  * For the input 'prettyandsimple@example.com', the output should be 'example.com'

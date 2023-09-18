@@ -1,11 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Implement class DepthCalculator with method calculateDepth
- * that calculates deoth of nested array
- * 
+ * Реализован класс DepthCalculator с методом CalculateDepth, который вычисляет глубину вложенного массива
+ *
  * @example
- * 
+ *
  * const depthCalc = new DepthCalculator();
  * depthCalc.calculateDepth([1, 2, 3, 4, 5]) => 1
  * depthCalc.calculateDepth([1, 2, 3, [4, 5]]) => 2
@@ -13,6 +12,12 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 class DepthCalculator {
+  /**
+   * Вычисляет глубину вложенного массива
+   *
+   * @param {object} arr исходный массив.
+   * @return {number} глубина вложенного массива.
+   */
   calculateDepth(arr) {
     let res = 1;
     arr.forEach((value) => {

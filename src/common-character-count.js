@@ -1,11 +1,11 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given two strings, find the number of common characters between them.
+ * Принимает две строки: находит количество общих символов между ними.
  *
- * @param {String} s1
- * @param {String} s2
- * @return {Number}
+ * @param {string} s1
+ * @param {string} s2
+ * @return {number} число общих символов
  *
  * @example
  * For s1 = "aabcc" and s2 = "adcaa", the output should be 3

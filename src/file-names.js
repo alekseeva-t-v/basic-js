@@ -1,14 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * There's a list of file, since two files cannot have equal names,
- * the one which comes later will have a suffix (k),
- * where k is the smallest integer such that the found name is not used yet.
+ * Есть список файлов, так как два файла не могут иметь одинаковые имена, тот, который появится позже, будет иметь суффикс (k), где k — наименьшее целое число, которое не использовалось с данным именем файла. Возвращает массив имен, которые будут присвоены файлам.
  *
- * Return an array of names that will be given to the files.
- *
- * @param {Array} names
- * @return {Array}
+ * @param {array} names массив имен файлов
+ * @return {array} преобразованный массив имен файлов
  *
  * @example
  * For input ["file", "file", "image", "file(1)", "file"],

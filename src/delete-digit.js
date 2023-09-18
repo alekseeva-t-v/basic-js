@@ -1,11 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given some integer, find the maximal number you can obtain
- * by deleting exactly one digit of the given number.
+ * Учитывая некоторое целое число, находит максимальное число, которое можно получить, удалив ровно одну цифру данного числа.
  *
- * @param {Number} n
- * @return {Number}
+ * @param {number} n исходное число
+ * @return {number} максимальное число, которое можно получить, удалив ровно одну цифру заданного числа
  *
  * @example
  * For n = 152, the output should be 52
@@ -14,7 +13,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function deleteDigit(n) {
   let maximumNumber = 0;
   let arrDigit = String(n).split('');
-  console.log(arrDigit);
+
   arrDigit.forEach((value, index, array) => {
     let item = array.splice(index, 1)[0];
     let currentNumber = Number(array.join(''));

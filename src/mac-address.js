@@ -1,14 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * The MAC-48 address is six groups of two hexadecimal digits (0 to 9 or A to F),
- * separated by hyphens.
+ * Производит проверку по заданной строке и возвращает ответ является ли это адресом MAC-48 или нет.
  *
- * Your task is to check by given string inputString
- * whether it's a MAC-48 address or not.
- *
- * @param {Number} inputString
- * @return {Boolean}
+ * @param {string} inputString исходная строка
+ * @return {boolean} true, если то адрес MAC-48, иначе false
  *
  * @example
  * For 00-1B-63-84-45-E6, the output should be true.
@@ -20,20 +16,23 @@ function isMAC48Address(n) {
     return false;
   }
 
-  const elementExists = arrValue.join('').split('').every((value) => {
-    return (
-      (value >= 0 && value <= 9) ||
-      value === 'A' ||
-      value === 'B' ||
-      value === 'C' ||
-      value === 'D' ||
-      value === 'E' ||
-      value === 'F'
-    );
-  });
+  const elementExists = arrValue
+    .join('')
+    .split('')
+    .every((value) => {
+      return (
+        (value >= 0 && value <= 9) ||
+        value === 'A' ||
+        value === 'B' ||
+        value === 'C' ||
+        value === 'D' ||
+        value === 'E' ||
+        value === 'F'
+      );
+    });
 
   return elementExists;
 }
 module.exports = {
-  isMAC48Address
+  isMAC48Address,
 };

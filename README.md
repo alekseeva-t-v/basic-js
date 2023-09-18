@@ -5,7 +5,7 @@
 
 ---
 
-### **Сосчитай котов!**
+### **Сосчитай котов!** | **Count cats!**
 
 ![Count cats!](./public/count-cats.jpg)
 
@@ -25,7 +25,7 @@
 
 ---
 
-### **Carbon dating**
+### **Углеродное датирование** | **Carbon dating**
 
 ![Carbon dating](./public/%D1%81arbon-dating.jpg) 
 
@@ -59,7 +59,7 @@
 
 ---
 
-### **Dream team**
+### **Команда мечты** | **Dream team**
 
 ![Dream team](./public/dream-team.jpg)  
 
@@ -79,7 +79,7 @@
 
 Реализация функции в файле `src/dream-team.js`.
 
-### **Какая пора года?**
+### **Какая пора года?** | **What season?**
 
 ![What season](./public/season.jpg)
 
@@ -108,7 +108,7 @@
 
 ---
 
-### **Ханойская башня**
+### **Ханойская башня** | **Tower of Hanoi**
 
 ![Tower of hanoi visualisation](./public/pyramid.jpg)
 
@@ -137,7 +137,7 @@
 
 ---
 
-### **Преобразование массива**
+### **Преобразование массива** | **Transform array**
 
 ![Transform array](./public/gears.jpg)
 
@@ -159,7 +159,7 @@
 
 ---
 
-### **Чейнмейкер**
+### **Чейнмейкер** | **Chain maker**
 
 ![Chaining](./public/chaining.jpg)
 Давайте попрактикуемся в [чейнинге](https://en.wikipedia.org/wiki/Method_chaining)!
@@ -187,14 +187,15 @@
 
 ---
 
-### **Recursive depth calculator**
+### **Рекурсивный вычислитель глубины** | **Recursive depth calculator**
 
-![Go deeper](https://i.imgur.com/k7lADiM.jpg)  
-Your task is to implement the class `DepthCalculator` with method `calculateDepth` that takes an `array` and returns its depth.
+![Go deeper](./public/depth.jpg)
 
-`calculateDepth` method must pass the given array **recursively**. Depth of a **flat** array is 1. Method must correctly work with `arrays` that contain no elements or contain empty `arrays`.
+Задача — реализовать класс `DepthCalculator` с методом `calculateDepth`, который принимает массив и возвращает его **глубину**.
 
-For example:
+Метод `calculateDepth` должен проходить полученный массив **рекурсивно**. Глубина **плоского** массива — 1. Метод должен корректно работать с массивами, не содержащими элементов или содержащими пустые массивы.
+
+Например:
 
 `const depthCalc = new DepthCalculator();`
 
@@ -204,55 +205,57 @@ For example:
 
 `depthCalc.calculateDepth([[[]]])` => `3`
 
-Write your code in `src/recursive-depth.js`.
+Реализация задачи в файле `src/recursive-depth.js`.
 
 ---
-### **Extended repeater**
+### **Расширенный повторитель** | **Extended repeater**
 
-![Extended repater](https://upload.wikimedia.org/wikipedia/commons/4/4b/Macaws_at_Jurong_Bird_Park_-Singapore-8.jpg)  
-Your task is to implement the function `repeater(str, options)`.
-This function returns a repeating `string` based on the given parameters:
-* `str` is a `string` to repeat;
-* `options` is an `object` of options, that contains properties:
-  * `repeatTimes` sets the `number` of repetitions of the `str`;
-  * `separator` is a `string` separating repetitions of the `str`;
-  * `addition` is an additional `string` that will be added to each repetition of the `str`;
-  * `additionRepeatTimes` sets the `number` of repetitions of the `addition`;
-  * `additionSeparator` is a `string` separating repetitions of the `addition`.
+![Extended repater](./public/parrot.jpg)  
 
-The `str` and `addition` parameters are `strings` by default. In case when **type** of these parameters is different, they must be converted to a `string`.
+Задача — реализовать функцию `repeater(str, options)`. Эта функция возвращает повторяющуюся **строку**, основываясь на заданных параметрах:
+*	`str` это **строка**, которая будет повторена
+*	`options` это **объект** опций, который содержит следующие свойства:
+    * `repeatTimes` устанавливает число повторений `str`
+    * `separator` это строка, разделяющая повторения `str`
+    * `addition` это дополнительная строка, которая будет добавлена после каждого повторения `str`
+    * `additionRepeatTimes` устанавливает число повторений `addition`
+    * `additionSeparator` это строка, разделяющая повторения `addition`
 
-`separator` and `additionSeparator` parameters are `strings`. 
+Параметры `str` и `addition` по умолчанию являются **строками**. В случае, если они другого типа, они должны быть преобразованы к строке.
 
-`repeatTimes` and `additionRepeatTimes` are integer `numbers` (in the absence of any of them, the corresponding string is not repeated).
+Параметры `separator` и `additionSeparator` являются строками.
 
-The only indispensable parameter is `str`, any others may be not defined. `separator` default value is `'+'`. `additionSeparator` default value is `'|'`.
+`repeatTimes` и `additionRepeatTimes` являются целыми числами (в случае отсутствия любого из них соответствующая строка не повторяется).
 
-For example: `repeater('STRING', { repeatTimes: 3, separator: '**', addition: 'PLUS', additionRepeatTimes: 3, additionSeparator: '00' })` => `'STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS'`
+Единственный обязательный параметр — это `str`, остальные могут не быть переданы.
+Значение `separator` по умолчанию это `'+'`. Значение `additionSeparator` по умолчанию это `'|'`.
 
-Write your code in `src/extended-repeater.js`.
+Например: `repeater('STRING', { repeatTimes: 3, separator: '**', addition: 'PLUS', additionRepeatTimes: 3, additionSeparator: '00' })` => `'STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS'`
+
+Реализация задачи в файле `src/extended-repeater.js`.
 
 ---
 
-### **Vigenere cipher**
+### **Vigenere cipher** | **Vigenere cipher**
 
-![Ciphering machine](https://live.staticflickr.com/1931/44960892745_471bee66bb_b.jpg)  
-Cryptography is awesome! Let's try to organize production of encryption machines. Our machines will use one of the encryption methods that are easy to understand, but also not amenable to simple cryptanalysis - the [**Vigenere cipher**](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher).
+![Ciphering machine](./public/typewriter.jpg)
 
-Our machine will have 2 modifications: **direct** and **reverse** (the type of machine is determined at the moment of creation). The **direct** machine simply encodes and decodes the string that was transmitted to it, and the **reverse** machine returns an **inverted** string after encoding and decoding.
+Криптография — это здорово! Давайте попробуем наладить производство шифровальных машин. Наши машины будут использовать один из методов шифрования, которые легки для понимания, но не могут быть разгаданы посредством простого криптоанализа — [**шифр Виженера**](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher).
 
-Your task is to implement the class `VigenereCipheringMachine`. `constructor` of this `class` accepts `true` (**or nothing**) to create **direct** machine and `false` to create **reverse** machine.
-Each instance of `VigenereCipheringMachine` must have 2 methods: `encrypt` and `decrypt`. 
+Наша машина будет иметь 2 модификации: **прямая** и **обратная** (тип машины определяется в момент создания). **Прямая** машина просто шифрует и дешифрует строку, переданную в нее, а **обратная** машина возвращает **перевернутую** задом наперед строку после шифрования и дешифрования.
 
-`encrypt` method accepts 2 parameters: `message` (`string` to encode) and `key` (`string`-keyword).
+Ваша задача — реализовать класс `VigenereCipheringMachine`. `constructor` этого класса принимает `true` (**или ничего**), чтобы создать **прямую** машину и `false`, чтобы создать **обратную** машину.
+Каждый экземпляр `VigenereCipheringMachine` должен иметь 2 метода: `encrypt` и `decrypt`.
 
-`decrypt` method accepts 2 parameters: `encryptedMessage` (`string` to decode) and `key` (`string`-keyword).
+Метод `encrypt` принимает 2 параметра: `message` (строка, чтобы ее зашифровать) и `key` (строку-кодовое слово).
 
-These parameters for both methods are **mandatory**. If at least one of them has not been given, an `Error` with message `Incorrect arguments!` must be thrown. The text returned by these methods must be **uppercase**. Machines encrypt and decrypt **only latin alphabet** (all other symbols remain unchanged).
+Метод `decrypt` принимает 2 параметра: `message` (строка, чтобы ее расшифровать) и `key` (строку-кодовое слово)
 
-You don't need to validate value sent to `constructor` and to `encrypt` and `decrypt` methods (except throwing an `Error` on absence of argument for these methods).
+Эти параметры для обоих методов являются **обязательными**. Если хотя бы один из них не был передан, должна быть выброшена ошибка с сообщением `Incorrect arguments!`. Машины шифруют и дешифруют **только символы латинского алфавита** (другие символы не изменяются). Строка, возвращаемая этими методами, должна иметь **верхний регистр**.
 
-For example:
+Вам не нужно валидировать значение, переданное в `contructor` и в методы `encrypt` и `decrypt` (за исключением выбрасывания ошибки при отсутствии аргумента для этих методов).
+
+Например:
 
 `const directMachine = new VigenereCipheringMachine();`
 
@@ -266,93 +269,117 @@ For example:
 
 `reverseMachine.decrypt('AEIHQX SX DLLU!', 'alphonse')` => `'!NWAD TA KCATTA'`
 
-Write your code in `src/vigenere-cipher.js`.
+Реализация задачи в файле `src/vigenere-cipher.js`.
 
 ---
 
-### **(ST) Common character count**
-Your task is to implement function that accepts two **strings** (`s1` and `s2`) and returns **number** of common characters between them.
+### **Сосчитать общие символы** | **(ST) Common character count**
 
-For example:
+![Common character count](./public/string.jpg)
+
+Задача — реализовать функцию, которая принимает 2 **строки** (`s1` и `s2`) и возвращает **число** их общих символов.
+
+Например:
 
 `getCommonCharacterCount('aabcc', 'adcaa')` => `3`
 
-Write your code in `src/common-character-count.js`.
+Реализация задачи в файле `src/common-character-count.js`.
 
 ---
 
-### **(ST) Delete digit**
-Your task is to implement function that accepts **integer number** (`n`) and returns maximal **number** you can obtain by deleting exactly one digit of the given number.
+### **Удалить цифру** | **(ST) Delete digit**
 
-For example:
+![Delete digit](./public/number.jpg)
 
-`deleteDigit(152) => 52`
+Задача — реализовать функцию, которая принимает **целое число** (`n`) и возвращает **максимальное число**, которое можно получить путем удаления **ровно одной цифры** из данного числа.
 
-Write your code in `src/delete-digit.js`.
+Например:
+
+`deleteDigit(152)` => `52`
+
+Реализация задачи в файле `src/delete-digit.js`.
 
 ---
 
-### **(ST) DNS stat**
-Your task is to implement function that accepts an **array** of domains (`domains`) and returns the **object** with the appearances of the DNS.
+### **Доменные имена** | **(ST) DNS stat**
 
-For example:
+![DNS stat](./public/domain-name.jpg)
+
+Задача — реализовать функцию, которая принимает **массив** доменов (`domains`) и возвращает **объект** с имеющимися в нем DNS.
+
+Например:
 
 `getDNSStats(['code.yandex.ru', 'music.yandex.ru', 'yandex.ru'])` => `{'.ru': 3, '.ru.yandex': 3, '.ru.yandex.code': 1,'.ru.yandex.music': 1}`
 
-Write your code in `src/dns-stats.js`.
+Реализация задачи в файле `src/dns-stats.js`.
 
 ---
 
-### **(ST) Encode line**
-Your task is to implement function that accepts **string** (`str`) and returns its encoded version.
+### **Закодируйте строку** | **(ST) Encode line**
 
-For example:
+![Encode line](./public/%D1%81hiffre.jpg)
+
+Задача — реализовать функцию, которая принимает **строку** (`str`) и возвращает ее закодированную версию.
+
+Например:
 
 `encodeLine('aabbbc')` => `'2a3bc'`
 
-Write your code in `src/encode-line.js`.
+Реализация задачи в файле `src/encode-line.js`.
 
 ---
 
-### **(ST) File names**
-There's a list of file, since two files cannot have equal names, the one which comes later will have a suffix **(k)**, where k is the smallest **integer** such that the found name is not used yet.
-Your task is to implement function that accepts **array** of names (`names`) and returns an **array** of names that will be given to the files.
+### **Имена файлов** | **(ST) File names**
 
-For example:
+![File names](./public/file.jpg)
+
+Дан список файлов, и поскольку файлы не могут иметь одинаковых имен, те из них, которые создаются позже, будут иметь суффикс **(k)**, где k — наименьшее **целое число**, которое не использовалось с данным именем файла.
+Ваша задача — реализовать функцию, которая принимает **массив** имен (`names`) и возвращает **массив** имен, которые будут даны файлам.
+
+Например:
 
 `renameFiles(["file", "file", "image", "file(1)", "file"])` => `["file", "file(1)", "image", "file(1)(1)", "file(2)"]`
 
-Write your code in `src/file-names.js`.
+Реализация задачи в файле `src/file-names.js`.
 
 ---
 
-### **(ST) Get email domain**
-Your task is to implement function that accepts email address (`email`) and returns it's **domain**.  
+### **Получить домен электронной почты** | **(ST) Get email domain**
 
-For example:
+![Get email domain](./public/email.jpg)
+
+Задача — реализовать функцию, которая принимает адрес электронной почты (`email`) и возвращает его **домен**.
+
+Например:
 
 `getEmailDomain('prettyandsimple@example.com')` => `'example.com'`
 
-Write your code in `src/get-email-domain.js`.
+Реализация задачи в файле `src/get-email-domain.js`.
 
 ---
 
-### **(ST) Is MAC-48 Address?**
-The **MAC-48 address** is six groups of two hexadecimal digits (0 to 9 or A to F) separated by hyphens.
-Your task is to implement function that accepts **string** (`inputString`) and returns `true` if **string** is valid **MAC-48 address**.  
+### **MAC-48 адрес?** | **(ST) Is MAC-48 Address?**
 
-For example:
+![Is MAC-48 Address](./public/MAC-48.jpg)
+
+MAC-48 адрес — это шесть групп по 2 шестнадцатеричные цифры (от 0 до 9 или от A до F), разделенных дефисами.
+Ваша задача — реализовать функцию, которая принимает строку (`inputString`) и возвращает `true`, если строка является валидным MAC-48 адресом.
+
+Например:
 
 `isMAC48Address('00-1B-63-84-45-E6')` => `true`
 
-Write your code in `src/mac-adress.js`.
+Реализация задачи в файле `src/mac-adress.js`.
 
 ---
 
-### **(ST) Matrix elements sum**
-Given **matrix**, a rectangular matrix of **integers**, just add up all the values that **don't appear below a "0"**.
+### **Сумма элементов матрицы** | **(ST) Matrix elements sum**
 
-For example:
+![Matrix elements sum](./public/matrix.jpg)
+
+Дана прямоугольная **матрица** **целых чисел**, просто сложите все значения, которые **не находятся под 0**.
+
+Например:
 
 ```
 const matrix = [
@@ -364,7 +391,7 @@ const matrix = [
 getMatrixElementsSum(matrix) => 9
 ```
 
-Write your code in `src/matrix-elements-sum.js`.
+Реализация задачи в файле `src/matrix-elements-sum.js`.
 
 ---
 

@@ -1,11 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given matrix, a rectangular matrix of integers,
- * just add up all the values that don't appear below a "0".
+ * Возвращает сумму всех значений, которые не отображаются ниже «0».
  *
- * @param {Array<Array>} matrix
- * @return {Number}
+ * @param {array<array>} matrix матрица значений
+ * @return {number} сумма всех значений, которые не отображаются ниже «0»
  *
  * @example
  * matrix = [

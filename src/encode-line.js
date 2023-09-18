@@ -1,10 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given a string, return its encoding version.
+ * Учитывая исходную строку, возвращает ее версию кодировки
  *
- * @param {String} str
- * @return {String}
+ * @param {string} str исходная строка
+ * @return {string} закодированная строка
  *
  * @example
  * For aabbbc should return 2a3bc

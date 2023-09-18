@@ -1,11 +1,11 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Create a repeating string based on the given parameters
+ * Создает повторяющуюся строку на основе заданных параметров.
  *
- * @param {String} str string to repeat
- * @param {Object} options options object
- * @return {String} repeating string
+ * @param {string} str исходная строка, которую необходимо повторять
+ * @param {object} options объект опций
+ * @return {string} повторяющаяся строка
  *
  *
  * @example
