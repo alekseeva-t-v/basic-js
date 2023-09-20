@@ -1,7 +1,9 @@
 # BasicJS
 
-## Общее описание задачи
-Ваша задача — написать несколько функций, являющихся решением подзадач. Описания подзадач, а также инструкции по запуску тестов и отправке решений находятся ниже.
+Алгоритмические задачи курса [**_"JavaScript/Front-end"_**](https://rs.school/js/)
+
+## Общее описание задания
+Ваша задача — написать несколько функций, являющихся решением подзадач. Описания подзадач, а также инструкции по запуску тестов находятся ниже.
 
 ---
 
@@ -421,30 +423,47 @@ minesweeper(matrix) => [
 
 ---
 
-### **(ST) Sort by height**
-Given an array with heights, sort them except if the value is `-1`.
-Your task is to implement function that accepts **array** (`arr`) and returns it **sorted**
+### **Отсортировать по высоте** | **(ST) Sort by height**
 
-For example:
+![Sort by height](./public/sort-by-height.jpg)
+
+Дан массив с высотами, необходимо отсортировать его, за исключением значений `-1`.
+Задача — реализовать функцию, которая принимает **массив** (`arr`) и возвращает его **отсортированным**.
+
+Например:
 
 `sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180])` => `[-1, 150, 160, 170, -1, -1, 180, 190]`
 
-Write your code in `src/sort-by-height.js`.
+Реализация задачи в файле `src/sort-by-height.js`.
 
 ---
 
-### **(ST) Sum digits**
-Your task is to implement function that accepts a **number** (`n`) and returns the **sum of its digits** until we get to a **one digit number**.  
+### **Сумма цифр** | **(ST) Sum digits**
 
-For example:
+![Sum digits](./public/sum-digits.jpg)
 
-For 100, the result should be 1 (1 + 0 + 0 = 1)  
+Ваша задача — реализовать функцию, которая принимает **число** (`n`) и возвращает **сумму его цифр**, пока не получится **число из одной цифры**.
+
+Например:
+
+Для 100 результат должен быть 1 (1 + 0 + 0 = 1)
+
 `getSumOfDigits(100)` => `1`
 
-For 91, the result should be 1 (9 + 1 = 10, 1 + 0 = 1)  
+Для 91, результат также должен быть 1 (9 + 1 = 10, 1 + 0 = 1)
+
 `getSumOfDigits(91)` => `1`
 
-Write your code in `src/sum-digits.js`.
+Реализация задачи в файле `src/sum-digits.js`.
 
 ---
+
+## Тестирование решений
+1. Установите [Node.js](https://nodejs.org/en/download/)
+2. Сделайте форк этого репозитория: https://github.com/AlreadyBored/basic-js
+3. Склонируйте себе этот репозиторий: https://github.com/<%your_github_username%>/basic-js/  
+4. Перейдите в папку `basic-js`
+5. Вбейте в командную строку [`npm install`](https://docs.npmjs.com/cli/install) для установки зависимостей
+6. Выполните `npm run test` в командной строке.
+7. Вы увидите число ожидающих (pending), проходящих и падающих тестов. 100% проходящие тесты соответствуют максимальному баллу за задание.
 

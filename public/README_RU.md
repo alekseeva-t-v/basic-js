@@ -5,7 +5,7 @@
 ---
 
 #### Предварительные шаги
-1. Установите [Node.js](https://nodejs.org/en/download/)   
+1. Установите [Node.js](https://nodejs.org/en/download/)
 2. Сделайте форк этого репозитория: https://github.com/AlreadyBored/basic-js
 3. Склонируйте себе этот репозиторий: https://github.com/<%your_github_username%>/basic-js/  
 4. Перейдите в папку `basic-js`  

@@ -1,10 +1,10 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
- * Given an array with heights, sort them except if the value is -1.
+ * Учитывая массив с высотами, сортирует значения, за исключением случаев, когда значение равно -1.
  *
- * @param {Array} arr
- * @return {Array}
+ * @param {array} arr исходный массив значений
+ * @return {array} отсортированный массив
  *
  * @example
  * arr = [-1, 150, 190, 170, -1, -1, 160, 180]
