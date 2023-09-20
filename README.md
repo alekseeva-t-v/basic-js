@@ -395,10 +395,13 @@ getMatrixElementsSum(matrix) => 9
 
 ---
 
-### **(ST) Minesweeper**
-In the popular Minesweeper game you have a board with some mines and cells that have a **number** in it that indicates the total **number of mines** in the neighboring cells. Starting off with some arrangement of mines we want to create a Minesweeper game setup.
+### **Сапёр** | **(ST) Minesweeper**
 
-For example:
+![Minesweeper](./public/minesweeper.jpg)
+
+В популярной игре "Сапёр" у вас есть поле с некоторым количеством мин и каждая клетка имеет число, которое показывает совокупное число мин в соседних с ней клетках. Получив поле с расставленными на нем минами (`true` — мина есть, `false` — мины нет) нам нужно создать поле игры "Сапёр".
+
+Например:
 
 ```
 const matrix = [
@@ -414,7 +417,7 @@ minesweeper(matrix) => [
 ];
 ```
 
-Write your code in `src/mine-sweeper.js`.
+Реализация задачи в файле `src/mine-sweeper.js`.
 
 ---
 
@@ -445,21 +448,3 @@ Write your code in `src/sum-digits.js`.
 
 ---
 
-© [AlreadyBored](https://github.com/alreadybored)  
-
-& tasks:
-* Common character count
-* Delete digit
-* DNS stat
-* Encode line
-* File names
-* Get email domain
-* Is MAC-48 Adress?
-* Matrix elements sum
-* Minesweeper
-* Sort by height
-* Sum digits
-
-are integrated from [Short track 2021 repo](https://github.com/rkhaslarov/rs-school-short-track-2021)
-
-& Thanks [mikhama](https://github.com/mikhama) for assistance!
