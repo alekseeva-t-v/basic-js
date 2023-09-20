@@ -29,7 +29,7 @@
 
 ### **Углеродное датирование** | **Carbon dating**
 
-![Carbon dating](./public/%D1%81arbon-dating.jpg) 
+![Carbon dating](./public/%D1%81arbon-dating.jpg)
 
 Для определения возраста археологических находок широко применяется **радиоизотопный анализ**. Один из его видов — **радиоуглеродный анализ**.
 
@@ -37,15 +37,12 @@
 
 [Почитайте о методе](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Nuclear_Chemistry/Nuclear_Kinetics/Half-Lives_and_Radioactive_Decay_Kinetics#section_2)
 
----
 <details>
 
   <summary>О расчетах</summary>
   Можно использовать формулу из статьи по ссылке выше. 0.693 — это приблизительное значение натурального логарифма двойки.
 
 </details>
-
----
 
 Задача — реализовать функцию `dateSample(sampleActivity)`, которая рассчитывает примерный возраст образца (в годах). Можно использовать данные `MODERN_ACTIVITY` и `HALF_LIFE_PERIOD`.
 
@@ -80,6 +77,8 @@
 `createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null])` => `'LOO'`
 
 Реализация функции в файле `src/dream-team.js`.
+
+---
 
 ### **Какая пора года?** | **What season?**
 
@@ -463,7 +462,7 @@ minesweeper(matrix) => [
 2. Сделайте форк этого репозитория: https://github.com/AlreadyBored/basic-js
 3. Склонируйте себе этот репозиторий: https://github.com/<%your_github_username%>/basic-js/  
 4. Перейдите в папку `basic-js`
-5. Вбейте в командную строку [`npm install`](https://docs.npmjs.com/cli/install) для установки зависимостей
+5. Вбейте в командную строку `npm install` для установки зависимостей
 6. Выполните `npm run test` в командной строке.
 7. Вы увидите число ожидающих (pending), проходящих и падающих тестов. 100% проходящие тесты соответствуют максимальному баллу за задание.
 
